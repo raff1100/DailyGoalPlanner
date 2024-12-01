@@ -1,38 +1,80 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: "Roboto", sans-serif;
+  /* overflow: hidden; */
+  /* height: 100%; */
+}
+
+
+nav{
+  background-color: rgb(192, 77, 77);
+  color: rgba(17, 1, 1, 0.644);
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container{
+  background-color: antiquewhite;
+  width: 100%;
+  margin: auto;
   min-height: 100vh;
+  padding: 4vmax 8vmax;
+  box-sizing: border-box;
+}
+
+.container>form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.container>h1{
+  text-align: center;
+  margin: 30px;
+  font-size: 2rem;
+}
+
+input,textarea,button{
+padding: 20px;
+border:1px solid black;
+border-radius: 5px;
+margin: 10px;
+font-size: 1.3rem;
+}
+
+button{
+  border:none;
+  cursor: pointer;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.task{
+  display: flex;
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 20px;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task>div{
+  width: 100%;
 }
+
+.task span{
+  color: rgb(87, 85, 85);
+}
+
+.task button{
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
